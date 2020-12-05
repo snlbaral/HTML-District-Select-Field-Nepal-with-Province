@@ -28,10 +28,10 @@ $(document).ready(function() {
 		let changedAttr = document.getElementsByClassName(selectVal)[0];
 		changedAttr.setAttribute('selected','selected');
 
-		let provience = ['201','202','203','204','205','206','207'];
-		provience.splice($.inArray(selectVal,provience), 1);
+		let provinces = ['201','202','203','204','205','206','207'];
+		provinces.splice($.inArray(selectVal,provinces), 1);
 
-		$.each(provience, function(index,value) {
+		$.each(provinces, function(index,value) {
 			$('.'+value).hide();
 			$('.'+value).removeAttr('selected','selected');
 		});
