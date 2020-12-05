@@ -1,182 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>HTML-District-Select-Field-Nepal-with-Provinces</title>
+	<!--Lets Use Jquery-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--Do Not Remove-->
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 
 <form action="" method="POST">
-<!--States-->
+	<!--States-->
 	<label>State/Province</label>
-	<select name="state" id="state">
-		<option value="Province No. 1">Province No. 1</option>
-		<option value="Province No. 2">Province No. 2</option>
-		<option value="Province No. 3">Province No. 3</option>
-		<option value="Province No. 4">Province No. 4</option>
-		<option value="Province No. 5">Province No. 5</option>
-		<option value="Province No. 6">Province No. 6</option>
-		<option value="Province No. 7">Province No. 7</option>
+	<select name="state" id="state" required>
+		<!--We must convert these values into Provience Name Later On Server Side Before Storing-->
+		<!--We'll use 201 as Selected By Default-->
+		<option value="201">Province No. 1</option>
+		<option value="202">Province No. 2</option>
+		<option value="203">Province No. 3</option>
+		<option value="204">Province No. 4</option>
+		<option value="205">Province No. 5</option>
+		<option value="206">Province No. 6</option>
+		<option value="207">Province No. 7</option>
 	</select>
-<!--Districts-->
+
+	<!--Districts-->
 	<label>District</label>
-	<select name="district" id="district">
-		<option value="Achham">Achham</option>
+	<select name="district" id="district" required>
+
+		<!--Provience No. 1-->
+			<!--We'll use Bhojpur as selected by default-->
+	        <option value="Bhojpur" class="201">Bhojpur</option>
+	        <option value="Dhankutta" class="201">Dhankutta</option>
+	        <option value="Ilam" class="201">Ilam</option>
+	        <option value="Jhapa" class="201">Jhapa</option>
+	        <option value="Khotang" class="201">Khotang</option>
+	        <option value="Morang" class="201">Morang</option>
+	        <option value="Okhaldunga" class="201">Okhaldunga</option>
+	        <option value="Panchthar" class="201">Panchthar</option>
+	        <option value="Sankhuwasabha" class="201">Sankhuwasabha</option>
+	        <option value="Solukhumbu" class="201">Solukhumbu</option>
+	        <option value="Sunsari" class="201">Sunsari</option>
+	        <option value="Taplejung" class="201">Taplejung</option>
+	        <option value="Terhathum" class="201">Terhathum</option>
+	        <option value="Udaypur" class="201">Udaypur</option>
+
+	    <!--Provience No. 2-->
+	        <option value="Bara" class="202">Bara</option>
+	        <option value="Parsa" class="202">Parsa</option>
+	        <option value="Dhanusa" class="202">Dhanusa</option>
+	        <option value="Mahottari" class="202">Mahottari</option>
+	        <option value="Saptari" class="202">Saptari</option>
+	        <option value="Sarlahi" class="202">Sarlahi</option>
+	        <option value="Siraha" class="202">Siraha</option>	        
+	        <option value="Rauthat" class="202">Rauthat</option>
+
+	    <!--Provience No. 3-->
+	        <option value="Bhaktapur" class="203">Bhaktapur</option>
+	        <option value="Chitwan" class="203">Chitwan</option>
+	        <option value="Dhading" class="203">Dhading</option>
+	        <option value="Dolkha" class="203">Dolkha</option>
+	        <option value="Kathmandu" class="203">Kathmandu</option>
+	        <option value="Kavreplanchauk" class="203">Kavreplanchauk</option>	        
+	        <option value="Lalitpur" class="203">Lalitpur</option>
+	        <option value="Makwanpur" class="203">Makwanpur</option>
+	        <option value="Nuwakot" class="203">Nuwakot</option>
+	        <option value="Ramechhap" class="203">Ramechhap</option>
+	        <option value="Rasuwa" class="203">Rasuwa</option>
+	        <option value="Sindhuli" class="203">Sindhuli</option>
+	        <option value="Sindhupalchauk" class="203">Sindhupalchauk</option>
+
+	    <!--Provience No. 4-->
+	        <option value="Baglung" class="204">Baglung</option>
+	        <option value="Gorkha" class="204">Gorkha</option>
+	        <option value="Kaski" class="204">Kaski</option>
+	        <option value="Lamjung" class="204">Lamjung</option>
+	        <option value="Manag" class="204">Manag</option>
+	        <option value="Mustang" class="204">Mustang</option>
+	        <option value="Myagdi" class="204">Myagdi</option>
+	        <option value="Nawalpur" class="204">Nawalpur</option>
+	        <option value="Parwat" class="204">Parwat</option>
+	        <option value="Syangja" class="204">Syangja</option>
+	        <option value="Tanahun" class="204">Tanahun</option>
+
+	    <!--Provience No. 5-->
+	        <option value="Arghakhanchi" class="205">Arghakhanchi</option>
+	        <option value="Banke" class="205">Banke</option>
+	        <option value="Bardiya" class="205">Bardiya</option>
+	        <option value="Dang Deukhuri" class="205">Dang Deukhuri</option>
+	        <option value="Eastern Rukum" class="205">Eastern Rukum</option>
+	        <option value="Gulmi" class="205">Gulmi</option>	        
+	        <option value="Kapilvastu" class="205">Kapilvastu</option>
+	        <option value="Palpa" class="205">Palpa</option>
+	        <option value="Parasi" class="205">Parasi</option>
+	        <option value="Pyuthan" class="205">Pyuthan</option>
+	        <option value="Rolpa" class="205">Rolpa</option>	        
+	        <option value="Rupandehi" class="205">Rupandehi</option>
+
+	    <!--Provience No. 6-->
+	        <option value="Dailekh" class="206">Dailekh</option>
+	        <option value="Dolpa" class="206">Dolpa</option>
+	        <option value="Humla" class="206">Humla</option>
+	        <option value="Jajarkot" class="206">Jajarkot</option>
+	        <option value="Jumla" class="206">Jumla</option>
+	        <option value="Kalikot" class="206">Kalikot</option>
+	        <option value="Mugu" class="206">Mugu</option>	    	
+	        <option value="Salyan" class="206">Salyan</option>
+	        <option value="Surkhet" class="206">Surkhet</option>
+	        <option value="Western Rukum" class="206">Western Rukum</option>
+
+	    <!--Provience No. 7-->
+	        <option value="Achham" class="207">Achham</option>
+	        <option value="Baitadi" class="207">Baitadi</option>
+	        <option value="Bajhang" class="207">Bajhang</option>
+	        <option value="Bajura" class="207">Bajura</option>
+	        <option value="Dadeldhura" class="207">Dadeldhura</option>
+	        <option value="Darchula" class="207">Darchula</option>
+	        <option value="Doti" class="207">Doti</option>
+	        <option value="Kailali" class="207">Kailali</option>
+	        <option value="Kanchanpur" class="207">Kanchanpur</option>
+
+	</select>
 
-		<option value="Arghakhanchi">Arghakhanchi</option>
-
-		<option value="Baglung">Baglung</option>
-
-		<option value="Baitadi">Baitadi</option>
-
-		<option value="Bajhang">Bajhang</option>
-
-		<option value="Bajura">Bajura</option>
-
-		<option value="Banke">Banke</option>
-
-		<option value="Bara">Bara</option>
-
-		<option value="Bardiya">Bardiya</option>
-
-		<option value="Bhaktapur">Bhaktapur</option>
-
-		<option value="Bhojpur">Bhojpur</option>
-
-		<option value="Chitwan">Chitwan</option>
-
-		<option value="Dadeldhura">Dadeldhura</option>
-
-		<option value="Dailekh">Dailekh</option>
-
-		<option value="Dang">Dang</option>
-
-		<option value="Darchula">Darchula</option>
-
-		<option value="Dhading">Dhading</option>
-
-		<option value="Dhankutta">Dhankutta</option>
-
-		<option value="Dhanusa">Dhanusa</option>
-
-		<option value="Dolkha">Dolkha</option>
-
-		<option value="Dolpa">Dolpa</option>
-
-		<option value="Doti">Doti</option>
-
-		<option value="Gorkha">Gorkha</option>
-
-		<option value="Gulmi">Gulmi</option>
-
-		<option value="Humla">Humla</option>
-
-		<option value="Ilam">Ilam</option>
-
-		<option value="Jajarkot">Jajarkot</option>
-
-		<option value="Jhapa">Jhapa</option>
-
-		<option value="Jumla">Jumla</option>
-
-		<option value="Kailali">Kailali</option>
-
-		<option value="Kalikot">Kalikot</option>
-
-		<option value="Kanchanpur">Kanchanpur</option>
-
-		<option value="Kapilvastu">Kapilvastu</option>
-
-		<option value="Kaski">Kaski</option>
-
-		<option value="Kathmandu">Kathmandu</option>
-
-		<option value="Kavreplanchauk">Kavreplanchauk</option>
-
-		<option value="Khotang">Khotang</option>
-
-		<option value="Lalitpur">Lalitpur</option>
-
-		<option value="Lamjung">Lamjung</option>
-
-		<option value="Mahottari">Mahottari</option>
-
-		<option value="Makwanpur">Makwanpur</option>
-
-		<option value="Manag">Manag</option>
-
-		<option value="Morang">Morang</option>
-
-		<option value="Mugu">Mugu</option>
-
-		<option value="Mustang">Mustang</option>
-
-		<option value="Myagdi">Myagdi</option>
-
-		<option value="Myagdi">Myagdi</option>
-
-		<option value="Nawalparasi">Nawalparasi</option>
-
-		<option value="Nuwakot">Nuwakot</option>
-
-		<option value="Okhaldunga">Okhaldunga</option>
-
-		<option value="Palpa">Palpa</option>
-
-		<option value="Panchthar">Panchthar</option>
-
-		<option value="Parsa">Parsa</option>
-
-		<option value="Parwat">Parwat</option>
-
-		<option value="Pyuthan">Pyuthan</option>
-
-		<option value="Ramechhap">Ramechhap</option>
-
-		<option value="Rasuwa">Rasuwa</option>
-
-		<option value="Rauthat">Rauthat</option>
-
-		<option value="Rolpa">Rolpa</option>
-
-		<option value="Rukum">Rukum</option>
-
-		<option value="Rupandehi">Rupandehi</option>
-
-		<option value="Salyan">Salyan</option>
-
-		<option value="Sankhuwasabha">Sankhuwasabha</option>
-
-		<option value="Saptari">Saptari</option>
-
-		<option value="Sarlahi">Sarlahi</option>
-
-		<option value="Sindhuli">Sindhuli</option>
-
-		<option value="Sindhupalchauk">Sindhupalchauk</option>
-
-		<option value="Siraha">Siraha</option>
-
-		<option value="Solukhumbu">Solukhumbu</option>
-
-		<option value="Sunsari">Sunsari</option>
-
-		<option value="Surkhet">Surkhet</option>
-
-		<option value="Syangja">Syangja</option>
-
-		<option value="Tanahun">Tanahun</option>
-
-		<option value="Tanahun">Tanahun</option>
-
-		<option value="Taplejung">Taplejung</option>
-
-		<option value="Terhathum">Terhathum</option>
-
-		<option value="Udaypur">Udaypur</option>
 
 	</select>
 </form>
-
 
 </body>
 </html>
