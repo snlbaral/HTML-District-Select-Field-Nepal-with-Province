@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//get the selected option value
-	let selDefault = $('#state option:selected').val();
+	let selDefault = $('#state option:selected').attr('filter');
 	//lets make sure it is displayed
 	$('.'+selDefault).show();
 	//lets add selected attribute to first class
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	//Let's work on select onchange
 	$('#state').on('change', function() {
 		//Repeating the same method as above
-		let selectVal = $('#state option:selected').val();
+		let selectVal = $('#state option:selected').attr('filter');
 		$('.'+selectVal).show();
 
 		let changedAttr = document.getElementsByClassName(selectVal)[0];
